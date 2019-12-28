@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
+
+import App from './../containers/App/App';
 
 const IndexPage = () => (
-  <div>
-    Hello World
-  </div>
-)
+  <App />
+);
 
-export default IndexPage
+export default IndexPage;
