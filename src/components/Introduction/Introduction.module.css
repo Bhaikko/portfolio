@@ -1,20 +1,23 @@
 .Introduction {
-    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     background-color: #252934;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.Button {
-    position: absolute;
-    color: white;
-    top: 50%;
-    right: 50%;
-    z-index: 2;
-}
-
-.Introduction>div:first {
+.Introduction>div:first-child {
     height: 100%;
+}
+
+.Particles {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    left: 0;
 }

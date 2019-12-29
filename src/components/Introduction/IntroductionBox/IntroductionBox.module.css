@@ -1,0 +1,36 @@
+.IntroductionBox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Name {
+    color: #EE0079;
+}
+
+.IntroductionBoxText {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Button {
+    color: white;
+    z-index: 2;
+}
+
+.Button:hover {
+    background-color: #EE0079;
+}
+
+.RightArrow {
+    margin-left: 2px;
+    transition: 0.1s ease-in-out;
+}
+
+.Button:hover > img {
+    transform: rotateZ(90deg);
+}
