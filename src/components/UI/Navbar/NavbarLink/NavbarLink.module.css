@@ -1,0 +1,11 @@
+.NavbarLink {
+    cursor: pointer;
+}
+
+.NavbarLink:hover {
+    color: #EE0079;
+}
+
+.Active {
+    color: #EE0079;
+}

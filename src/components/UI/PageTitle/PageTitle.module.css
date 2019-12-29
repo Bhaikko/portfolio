@@ -1,0 +1,12 @@
+.PageTitle {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #272727;
+    
+}

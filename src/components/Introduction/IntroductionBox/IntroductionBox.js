@@ -17,7 +17,7 @@ const IntroductionBox = props => {
                 onClick={() => {console.log("Clicked")}}
             >
                 View My Work
-                <img src={RightArrowIcon} className={classes.RightArrow} />
+                <img src={RightArrowIcon} className={classes.RightArrow} alt="..."/>
             </Button>
         </div>
     );

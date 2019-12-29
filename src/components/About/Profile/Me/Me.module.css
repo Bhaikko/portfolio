@@ -1,0 +1,28 @@
+.MeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+
+.ProfileImage {
+    border-radius: 10px;
+    width: 15%;
+    height: 15%;
+}
+
+.Introduction {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: #696969;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.Highlight {
+    color: #009ADA;
+}

@@ -59,11 +59,12 @@ const particleOptions = {
 
 const Introduction = () => {
     return (   
-        <div className={classes.Introduction}>
+        <section className={classes.Introduction}>
             <Particles 
                 style={{
                     height: "150%",
                     width: "150%",
+                    zIndex: 0
                 }}
                 className={classes.Particles}
                 params={particleOptions}
@@ -71,7 +72,7 @@ const Introduction = () => {
 
             <IntroductionBox />
             
-        </div>  
+        </section>  
     );
 }
 

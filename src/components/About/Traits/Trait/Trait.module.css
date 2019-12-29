@@ -1,0 +1,51 @@
+.TraitContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.TraitImage {
+    width: 50px;
+    height: 50px;
+}
+
+.Hexagon {
+    position: relative;
+    width: 100px; 
+    height: 57.74px;
+    background-color: #64C7CC;
+    margin: 28.87px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.Hexagon:before,
+.Hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+  
+.Hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #64C7CC;
+}
+  
+.Hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 28.87px solid #64C7CC;
+}
+
+.TraitTitle {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    color: #696969;
+    font-size: 20px;
+}

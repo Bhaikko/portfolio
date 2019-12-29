@@ -14,15 +14,18 @@
     color: white;
     font-size: 20px;
     letter-spacing: 2px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .Button {
     color: white;
-    z-index: 2;
+    margin-top: 1%;
+    z-index: 99;
 }
 
 .Button:hover {
+    background-color: #EE0079;
+}
+.Button:active {
     background-color: #EE0079;
 }
 
