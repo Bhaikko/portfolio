@@ -1,0 +1,14 @@
+.SkillContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.SkillName {
+    text-align: center;
+    color: white;
+    background-color: #64C7CC;
+    padding: 3px;
+    border-radius: 2px;
+    width: 30%;
+}

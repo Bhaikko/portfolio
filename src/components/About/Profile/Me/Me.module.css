@@ -4,14 +4,14 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    margin-top: 5%;
+    width: 40%;
 }
 
 
 .ProfileImage {
     border-radius: 10px;
-    width: 15%;
-    height: 15%;
+    width: 50%;
+    height: 50%;
 }
 
 .Introduction {
