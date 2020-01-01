@@ -16,9 +16,7 @@ class About extends Component {
         }
     }
 
-    changeTabHandler = (tab, event) => {
-        event.target.selected = true;   
-        
+    changeTabHandler = tab => {        
         this.setState({
             currentTab: tab
         });
@@ -30,13 +28,13 @@ class About extends Component {
                 <PageTitle>Projects</PageTitle>
                 <div className={classes.ProjectsContainer}>
                     <div className={classes.ButtonsContainer}>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("all", event)} selected={this.state.currentTab === "all"}>All</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("react", event)} selected={this.state.currentTab === "react"}>React + Redux</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("native", event)} selected={this.state.currentTab === "native"}>React Native</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("angular", event)} selected={this.state.currentTab === "angular"}>Angular</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("aspcore", event)} selected={this.state.currentTab === "aspcore"}>ASP Core .NET</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("js", event)} selected={this.state.currentTab === "js"}>Javascript</Button>
-                        <Button classes={classes.Button} onClick={(event) => this.changeTabHandler("games",event)} selected={this.state.currentTab === "games"}>Games</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("all")} selected={this.state.currentTab === "all"}>All</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("react")} selected={this.state.currentTab === "react"}>React + Redux</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("native")} selected={this.state.currentTab === "native"}>React Native</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("angular")} selected={this.state.currentTab === "angular"}>Angular</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("aspcore")} selected={this.state.currentTab === "aspcore"}>ASP Core .NET</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("js")} selected={this.state.currentTab === "js"}>Javascript</Button>
+                        <Button classes={classes.Button} onClick={() => this.changeTabHandler("games")} selected={this.state.currentTab === "games"}>Games</Button>
                     </div>
 
                     <div className={classes.ProjectsShowcaseContainer}>
@@ -145,6 +143,8 @@ class About extends Component {
                         })()}
                     </div>
                 </div>
+
+                
             </section>
         );
     }

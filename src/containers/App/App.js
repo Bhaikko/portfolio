@@ -6,6 +6,7 @@ import Introduction from './../../components/Introduction/Introduction';
 import Projects from './../../components/Projects/Projects';
 import Navbar from '../../components/UI/Navbar/Navbar';
 import About from '../../components/About/About';
+import Contact from '../../components/ContactMe/Contact';
 
 class App extends Component {
     render() {
@@ -15,6 +16,7 @@ class App extends Component {
                 <Navbar />
                 <About />
                 <Projects />
+                <Contact />
             </>
         );
     }

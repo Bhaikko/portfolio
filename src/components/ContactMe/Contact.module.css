@@ -1,0 +1,53 @@
+.Contact {
+    background-color: #252934;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PathColor {
+    color: #f5f5f5;
+}
+
+.PageTitle {
+    color: white;
+    margin-top: 5%;
+}
+
+.ContactMessage {
+    color: #04C2C9;
+    margin-top: 5%;
+}
+
+.ContactIcons {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.Footer {
+    background: #1B242F;
+    padding: 70px 0 50px 0;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BackToTop {
+    background-color: #EE0079;
+    padding: 10px 15px;
+    position: absolute;
+    top: -20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.RightArrow {
+    transform: rotateZ(-90deg);
+}
