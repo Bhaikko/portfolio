@@ -50,7 +50,6 @@ class SkillsTabset extends Component {
     }
 
     render() {
-        console.log(this.skills);
         return (
             <div className={classes.SkillsTabset}>
                 <Tabs>

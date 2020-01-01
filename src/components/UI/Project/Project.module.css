@@ -1,0 +1,60 @@
+:root {
+    --transition-time: 0.5s;
+}
+
+.ProjectContainer {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: var(--transition-time);
+    margin: 2%;
+}
+
+.ProjectContainer:hover>.ProjectImage {
+    opacity: 0;
+}
+
+.ProjectContainer:hover>.Link {
+    transform: translateY(0);
+}
+.ProjectContainer:hover>.ProjectTitle {
+    transform: translateY(0);
+}
+
+.ProjectImage {
+
+    transition: var(--transition-time);
+}
+
+.Link {
+    position: absolute;
+    z-index: 3;
+    transform: translateY(300px);
+    transition: var(--transition-time);
+    text-decoration: none;
+    bottom: 20%;
+}
+
+.Button {
+    color: black;
+    border: 2px solid #EE0079;
+}
+
+.ProjectTitle {
+    color: black;
+    top: 20%;
+    position: absolute;
+    transform: translateY(-300px);
+    transition: var(--transition-time);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.Description {
+    color: #EE0079;
+    font-weight: normal;
+}
