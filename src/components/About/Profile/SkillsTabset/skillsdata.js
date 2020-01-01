@@ -76,7 +76,7 @@ export const skills = {
             percentage: "30%"
         },
         {
-            id: 1,
+            id: 2,
             name: "Unreal Game Engine",
             percentage: "40%"
         },

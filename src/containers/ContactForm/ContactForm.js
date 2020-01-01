@@ -27,7 +27,7 @@ class ContactForm extends Component {
 
     submitHandler = () => {
         console.log(this.state);
-
+        console.log(FIREBASE_API_KEY);
     }
 
     render() {

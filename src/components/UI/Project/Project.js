@@ -13,7 +13,7 @@ const Project = props => {
                 <div className={classes.Description}>{props.projectDescription}</div>    
             </div>
 
-            <a href={props.projectLink} target="_blank" className={classes.Link}>
+            <a href={props.projectLink} target="_blank" className={classes.Link} rel="noopener noreferrer">
                 <Button classes={classes.Button}>
                     Learn More
                 </Button>

@@ -11,6 +11,7 @@ const Navbar = () => {
                 <NavbarLink>About</NavbarLink>
                 <NavbarLink>Portfolio</NavbarLink>
                 <NavbarLink>Contact</NavbarLink>
+                <NavbarLink>Resume</NavbarLink>
             </div>
         </div>
     );

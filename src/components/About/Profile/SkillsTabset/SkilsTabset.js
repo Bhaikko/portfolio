@@ -47,13 +47,15 @@ class SkillsTabset extends Component {
                     {(() => {
                         switch (this.state.currentTab) {
                             case "languages":
-                               return this.renderSkill(skills.languages) 
+                               return this.renderSkill(skills.languages); 
                             case "webTechnologies":
-                                return this.renderSkill(skills.webTechnologies) 
+                                return this.renderSkill(skills.webTechnologies); 
                             case "gameTechnologies":
-                                return this.renderSkill(skills.gameTechnologies) 
+                                return this.renderSkill(skills.gameTechnologies);
                             case "desginerTechnologies":
-                                return this.renderSkill(skills.designerTechnologies) 
+                                return this.renderSkill(skills.designerTechnologies); 
+                            default:
+                                return "";
                         }
                     })()}
                 </div>

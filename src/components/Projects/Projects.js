@@ -139,6 +139,9 @@ class About extends Component {
                                             }}
                                         />
                                     ));
+
+                                default:
+                                    return "";
                             }
                         })()}
                     </div>
