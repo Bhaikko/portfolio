@@ -51,3 +51,10 @@
 .RightArrow {
     transform: rotateZ(-90deg);
 }
+
+.FootNote {
+    margin-top: 2%;
+    text-transform: uppercase;
+    color: #8F9AA7;
+    letter-spacing: 3px;
+}

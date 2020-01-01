@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import 'react-tabs/style/react-tabs.css';
-
 import classes from './SkillsTabset.module.css';
 import Skill from '../../../UI/Skill/Skill';
 import Button from './../../../UI/Button/Button';

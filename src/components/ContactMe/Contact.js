@@ -34,7 +34,12 @@ const Contact = () => {
                     <ContactIcon contactLink="https://in.linkedin.com/in/siddharth-pawar-81172b186" icon={LinkedInIcon} />
                     <ContactIcon contactLink="https://www.instagram.com/bhaikk0/" icon={InstagramIcon} />
                 </div>
+                <div className={classes.FootNote}>
+                    siddharth pawar 
+                    <span style={{color: "#EE0079"}}>©2020</span>
+                </div>
             </div>
+
         </section>
     );
 }
