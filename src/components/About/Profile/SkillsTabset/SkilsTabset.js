@@ -43,7 +43,7 @@ class SkillsTabset extends Component {
                     <Button classes={classes.Button} onClick={() => this.changeTabHandler("gameTechnologies")} selected={this.state.currentTab === "gameTechnologies"}>Game Technologies</Button>
                     <Button classes={classes.Button} onClick={() => this.changeTabHandler("desginerTechnologies")} selected={this.state.currentTab === "desginerTechnologies"}>Designer Technologies</Button>
                 </div>
-                <div className={classes.ProjectsShowcaseContainer}>
+                <div className={classes.SkillsShowcaseContainer}>
                     {(() => {
                         switch (this.state.currentTab) {
                             case "languages":

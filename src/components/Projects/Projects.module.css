@@ -38,3 +38,36 @@
 
 
 
+@media screen and (max-width: 576px) {
+
+    .Projects {
+        width: 100vw;
+    }
+
+    .ProjectsContainer {
+        width: 100%;
+        font-size: 10px;
+        margin-top: 5%;
+    }
+
+    .ButtonsContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ProjectsShowcaseContainer {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+    .Button {
+        font-size: 9px;
+        padding: 5px 10px;
+    }
+}

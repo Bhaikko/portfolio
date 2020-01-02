@@ -60,9 +60,19 @@ class Navbar extends Component {
                     <NavbarLink onClick={() => this.scrollToSection(this.props.references.projectsRef)} Active={this.state.currentActiveTab === "portfolio"}>Portfolio</NavbarLink>
                     <NavbarLink onClick={() => this.scrollToSection(this.props.references.contactRef)} Active={this.state.currentActiveTab === "contact"}>Contact</NavbarLink>
                     <NavbarLink>Resume</NavbarLink>
+
+                    {/* <div className={classes.Hamburger}>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div> */}
                 </div>
             </div>
         );
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("scroll", this.scrollHandler);
     }
 }
 

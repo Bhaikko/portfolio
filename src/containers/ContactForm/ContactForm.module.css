@@ -32,3 +32,10 @@
     opacity: 0.5;
 
 }
+
+@media screen and (max-width: 576px) {
+    .ContactForm {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+}

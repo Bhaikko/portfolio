@@ -54,10 +54,7 @@ class About extends Component {
                                             projectLink={project.projectLink}
                                             projectName={project.projectName}
                                             projectDescription={project.projectDescription}
-                                            imageStyle={{
-                                                width: "500px",
-                                                height: "400px"
-                                            }}
+                                            
                                         />
                                     ));
 
@@ -69,10 +66,6 @@ class About extends Component {
                                             projectLink={project.projectLink}
                                             projectName={project.projectName}
                                             projectDescription={project.projectDescription}
-                                            imageStyle={{
-                                                width: "500px",
-                                                height: "400px"
-                                            }}
                                         />
                                     ));
                                 case "native":

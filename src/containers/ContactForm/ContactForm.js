@@ -37,7 +37,7 @@ class ContactForm extends Component {
                 <input type="text" onChange={event => this.inputHandler("email", event)} className={classes.FormInput} placeholder="Email"/>      
                 <textarea type="text" onChange={event => this.inputHandler("message", event)} className={classes.FormInput} placeholder="Message" rows="5"/>    
 
-                <Button onClick={this.submitHandler} classes={classes.Button} disabled={this.state.name === "" || !this.state.email === "" || !this.state.message === ""}>Submit</Button>  
+                <Button onClick={this.submitHandler} classes={classes.Button} disabled={this.state.name === "" || this.state.email === "" || this.state.message === ""}>Submit</Button>  
             </div>
         );
     }

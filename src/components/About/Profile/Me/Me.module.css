@@ -26,3 +26,9 @@
 .Highlight {
     color: #009ADA;
 }
+
+@media screen and (max-width: 576px) {
+    .MeContainer {
+        width: 100%;
+    }
+}

@@ -58,3 +58,13 @@
     color: #8F9AA7;
     letter-spacing: 3px;
 }
+
+@media screen and (max-width: 576px) {
+    .Contact {
+        width: 100vw;
+    }
+
+    .ContactIcons {
+        width: 90%;
+    }
+}
