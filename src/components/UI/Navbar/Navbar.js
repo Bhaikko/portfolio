@@ -8,7 +8,8 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentActiveTab: "home"
+            currentActiveTab: "home",
+            showNavbar: false
         }
         this.navbarReference = React.createRef();
     }
@@ -51,9 +52,16 @@ class Navbar extends Component {
         });
     }
 
+    openNavbar = () => {
+
+        this.setState(prev => ({
+            showNavbar: !prev.showNavbar
+        }))
+    }
+
     render() {
         return (
-            <div className={classes.Navbar} ref={this.navbarReference}>
+            <div className={[classes.Navbar, this.state.showNavbar ? classes.OpenNavBar : null].join(" ")} ref={this.navbarReference}>
                 <div className={classes.NavbarItems}>
                     <NavbarLink onClick={() => this.scrollToSection(this.props.references.introductionRef)} Active={this.state.currentActiveTab === "home"}>Home</NavbarLink>
                     <NavbarLink onClick={() => this.scrollToSection(this.props.references.aboutRef)} Active={this.state.currentActiveTab === "about"}>About</NavbarLink>
@@ -61,11 +69,12 @@ class Navbar extends Component {
                     <NavbarLink onClick={() => this.scrollToSection(this.props.references.contactRef)} Active={this.state.currentActiveTab === "contact"}>Contact</NavbarLink>
                     <NavbarLink>Resume</NavbarLink>
 
-                    {/* <div className={classes.Hamburger}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div> */}
+                </div>
+                
+                <div className={classes.Hamburger} onClick={this.openNavbar}>
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
             </div>
         );
