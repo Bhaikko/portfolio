@@ -31,7 +31,7 @@ class App extends Component {
     render() {
         return (
             <>
-                <Introduction setReference={this.setReference}/>
+                <Introduction setReference={this.setReference} aboutRef={this.state.aboutRef.current}/>
                 <Navbar references={{
                     introductionRef: this.state.introductionRef.current,
                     aboutRef: this.state.aboutRef.current,
@@ -40,7 +40,7 @@ class App extends Component {
                 }} />
                 <About setReference={this.setReference} />
                 <Projects setReference={this.setReference} />
-                <Contact setReference={this.setReference} />
+                <Contact setReference={this.setReference} introductionRef={this.state.introductionRef.current}/>
             </>
         );
     }

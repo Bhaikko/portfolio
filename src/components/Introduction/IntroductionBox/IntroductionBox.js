@@ -5,6 +5,14 @@ import Button from '../../UI/Button/Button';
 import RightArrowIcon from './../../../images/RightArrow.png';
 
 const IntroductionBox = props => {
+
+    const scrollHandler = () => {
+        window.scrollTo({
+            top: props.aboutRef.offsetTop,
+            behavior: "smooth"
+        });
+    }
+
     return (
         <div className={classes.IntroductionBox}>
             <div className={classes.IntroductionBoxText}>
@@ -14,7 +22,7 @@ const IntroductionBox = props => {
 
             <Button 
                 classes={classes.Button}
-                onClick={() => {console.log("Clicked")}}
+                onClick={scrollHandler}
             >
                 View My Work
                 <img src={RightArrowIcon} className={classes.RightArrow} alt="..."/>

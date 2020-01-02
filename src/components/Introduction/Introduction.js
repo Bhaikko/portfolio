@@ -81,7 +81,7 @@ class Introduction extends Component {
                   params={particleOptions}
               />
   
-              <IntroductionBox />
+              <IntroductionBox aboutRef={this.props.aboutRef}/>
               
           </section>  
       );

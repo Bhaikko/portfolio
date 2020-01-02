@@ -35,7 +35,7 @@ class Contact extends Component {
                 <ContactForm />
     
                 <div className={classes.Footer}>
-                    <div className={classes.BackToTop}>
+                    <div className={classes.BackToTop} onClick={() => window.scrollTo({top: this.props.introductionRef.offsetTop, behavior: "smooth"})}>
                         <img src={RightArrowIcon} className={classes.RightArrow} alt="..."/>
                         <img src={RightArrowIcon} className={classes.RightArrow} alt="..."/>
                     </div>

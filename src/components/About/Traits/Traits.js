@@ -7,27 +7,27 @@ import Trait from './Trait/Trait';
 const traits = [
     {
         id: 1,
-        title: "Organised",
+        title: "Fast",
         icon: TraitImage,
-        description: "Organised And Pretty Code"
+        description: "Fast load times and lag free interaction, my highest priority."
     },
     {
         id: 2,
-        title: "Organised",
+        title: "Organized",
         icon: TraitImage,
-        description: "Organised And Pretty Code"
+        description: "Gets work done before Deadlines."
     },
     {
         id: 3,
-        title: "Organised",
+        title: "Intuitive",
         icon: TraitImage,
-        description: "Organised And Pretty Code"
+        description: "Strong Preference for easy to use, intuitive UX/UI."
     },
     {
         id: 4,
-        title: "Organised",
+        title: "Cooperative",
         icon: TraitImage,
-        description: "Organised And Pretty Code"
+        description: "I believe in working as team."
     }
 
 ]

@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import classes from './ContactForm.module.css';
 import Button from './../../components/UI/Button/Button';
 
-import { FIREBASE_API_KEY } from '../../credentials';
 
 class ContactForm extends Component {
 
@@ -22,12 +21,22 @@ class ContactForm extends Component {
         this.setState({
             [id]: event.target.value
         });
-        console.log(this.state);
     }
 
     submitHandler = () => {
-        console.log(this.state);
-        console.log(FIREBASE_API_KEY);
+        const data = JSON.stringify(this.state);
+        fetch(`https://portfolio-16066.firebaseio.com/messages.json`, {
+            method: 'post',
+            headers: {'Content-Type':'application/json'},
+            body: data
+        })
+            .then(() => {
+                alert("Thank you for your response, I'll reach you ASAP!")
+            })
+            .catch(err => {
+                console.log(err);
+                alert("Something Went Wrong");
+            });
     }
 
     render() {

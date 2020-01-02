@@ -26,6 +26,7 @@
 
 
 .Hamburger {
+  display: none;
   width: 40px;
   height: 20px;
   z-index: 3;
@@ -58,6 +59,10 @@
     margin-left: 0;
     overflow: hidden;
     opacity: 0;
+  }
+
+  .Hamburger {
+    display: inline-block;
   }
 
 

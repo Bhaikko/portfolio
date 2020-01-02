@@ -59,14 +59,48 @@ class Navbar extends Component {
         }))
     }
 
+    closeNavBar = () => {
+        this.setState({
+            showNavbar: false
+        });
+    }
+
     render() {
         return (
             <div className={[classes.Navbar, this.state.showNavbar ? classes.OpenNavBar : null].join(" ")} ref={this.navbarReference}>
                 <div className={classes.NavbarItems}>
-                    <NavbarLink onClick={() => this.scrollToSection(this.props.references.introductionRef)} Active={this.state.currentActiveTab === "home"}>Home</NavbarLink>
-                    <NavbarLink onClick={() => this.scrollToSection(this.props.references.aboutRef)} Active={this.state.currentActiveTab === "about"}>About</NavbarLink>
-                    <NavbarLink onClick={() => this.scrollToSection(this.props.references.projectsRef)} Active={this.state.currentActiveTab === "portfolio"}>Portfolio</NavbarLink>
-                    <NavbarLink onClick={() => this.scrollToSection(this.props.references.contactRef)} Active={this.state.currentActiveTab === "contact"}>Contact</NavbarLink>
+                    <NavbarLink 
+                        onClick={() => this.scrollToSection(this.props.references.introductionRef)}  
+                        closeNavBar={this.closeNavBar} 
+                        Active={this.state.currentActiveTab === "home"}
+                    >
+                        Home    
+                    </NavbarLink>
+
+                    <NavbarLink 
+                        onClick={() => this.scrollToSection(this.props.references.aboutRef)} 
+                        Active={this.state.currentActiveTab === "about"}
+                        closeNavBar={this.closeNavBar}
+                    >
+                        About    
+                    </NavbarLink>
+
+                    <NavbarLink 
+                        onClick={() => this.scrollToSection(this.props.references.projectsRef)} 
+                        Active={this.state.currentActiveTab === "portfolio"}
+                        closeNavBar={this.closeNavBar}
+                    >
+                        Portfolio    
+                    </NavbarLink>
+
+                    <NavbarLink 
+                        onClick={() => this.scrollToSection(this.props.references.contactRef)} 
+                        Active={this.state.currentActiveTab === "contact"}
+                        closeNavBar={this.closeNavBar}
+                    >
+                        Contact    
+                    </NavbarLink>
+
                     <NavbarLink>Resume</NavbarLink>
 
                 </div>
