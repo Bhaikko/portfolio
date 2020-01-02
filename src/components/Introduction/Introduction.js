@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 
 import classes from './Introduction.module.css';
@@ -57,23 +57,35 @@ const particleOptions = {
   retina_detect: true
 };
 
-const Introduction = () => {
-    return (   
-        <section className={classes.Introduction}>
-            <Particles 
-                style={{
-                    height: "150%",
-                    width: "150%",
-                    zIndex: 0
-                }}
-                className={classes.Particles}
-                params={particleOptions}
-            />
+class Introduction extends Component {
 
-            <IntroductionBox />
-            
-        </section>  
-    );
+    constructor(props) {
+      super(props);
+      this.myRef = React.createRef();
+    }
+
+    componentDidMount() {
+      this.props.setReference("introductionRef", this.myRef);
+    }
+
+    render() {
+      return (   
+          <section className={classes.Introduction} ref={this.myRef}>
+              <Particles 
+                  style={{
+                      height: "150%",
+                      width: "150%",
+                      zIndex: 0
+                  }}
+                  className={classes.Particles}
+                  params={particleOptions}
+              />
+  
+              <IntroductionBox />
+              
+          </section>  
+      );
+    }
 }
 
 export default Introduction;

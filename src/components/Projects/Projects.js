@@ -14,6 +14,12 @@ class About extends Component {
         this.state = {
             currentTab: "all"
         }
+
+        this.myRef = React.createRef();
+    }
+
+    componentDidMount() {
+        this.props.setReference("projectsRef", this.myRef);
     }
 
     changeTabHandler = tab => {        
@@ -24,7 +30,7 @@ class About extends Component {
 
     render() {
         return (
-            <section className={classes.Projects}>
+            <section className={classes.Projects} ref={this.myRef}>
                 <PageTitle>Projects</PageTitle>
                 <div className={classes.ProjectsContainer}>
                     <div className={classes.ButtonsContainer}>
