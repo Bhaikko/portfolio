@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import classes from './Navbar.module.css';
 import NavbarLink from './NavbarLink/NavbarLink';
+import { RESUME_LINK } from '../../../credentials';
 
 class Navbar extends Component {
 
@@ -65,6 +66,10 @@ class Navbar extends Component {
         });
     }
 
+    resumeCLickHandler = () => {
+        window.location = RESUME_LINK;
+    }
+
     render() {
         return (
             <div className={[classes.Navbar, this.state.showNavbar ? classes.OpenNavBar : null].join(" ")} ref={this.navbarReference}>
@@ -101,7 +106,7 @@ class Navbar extends Component {
                         Contact    
                     </NavbarLink>
 
-                    <NavbarLink>Resume</NavbarLink>
+                    <NavbarLink onClick={this.resumeCLickHandler}>Resume</NavbarLink>
 
                 </div>
                 
